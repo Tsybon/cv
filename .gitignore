@@ -1,7 +1,7 @@
 .superpowers/
 .DS_Store
 
-# source CVs — contain phone/Telegram, never publish
+# source CVs — carry personal contact details, never publish
 nda_Serhii_Tsybulnyk.pdf
 Serhii_Tsybulnyk_CV_2026_v2.pdf
 node_modules/
