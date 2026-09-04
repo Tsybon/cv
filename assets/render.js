@@ -70,7 +70,7 @@ function renderSidebar(cv) {
   for (const item of cv.languages) side.append(el('p', 'it', item))
 
   section(side, cv.labels.interests)
-  side.append(el('p', 'it', cv.interests.join(' · ')))
+  for (const item of cv.interests) side.append(el('p', 'it', item))
 
   return side
 }

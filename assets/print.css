@@ -1,0 +1,106 @@
+/* The PDF is always the light palette: a recruiter prints it, and a dark
+   sheet wastes toner and reads badly on paper. */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+:root {
+  --paper: #ffffff;
+  --ink: #191d23;
+  --ink-muted: #4a515c;
+  --ink-faint: #98a1ad;
+  --rule: #eaecef;
+  --chip: #f3f5f7;
+  --sidebar-bg: #1a1a1d;
+  --sidebar-fg: #a8adb5;
+  --sidebar-sec: #6b7078;
+  --accent: #c7ccd4;
+  --accent-print: #4b5058;
+}
+
+/* The sidebar column is painted on the body, not on .side. A background on an
+   element stops where that element's box ends, so on a two-page PDF the dark
+   column would break off mid-page; a body background repeats on every printed
+   page and gives the column a continuous edge. */
+body {
+  margin: 0;
+  background: linear-gradient(to right, #1a1a1d 0 62mm, #ffffff 62mm 100%);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  font-size: 9.4pt;
+  line-height: 1.45;
+}
+
+.chrome,
+.fallback {
+  display: none !important;
+}
+
+/* Transparent so the body gradient — the thing that paints the sidebar column
+   on every page — is not covered by the sheet's own white background. */
+.cv {
+  display: grid;
+  grid-template-columns: 62mm 1fr;
+  max-width: none;
+  margin: 0;
+  min-height: 297mm;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  overflow: visible;
+}
+
+.side {
+  background: transparent !important;
+  color: #a8adb5 !important;
+  padding: 14mm 8mm 12mm;
+}
+
+.main {
+  background: transparent;
+}
+
+.side .nm { font-size: 17pt; }
+.side .rl { font-size: 8.6pt; }
+.side .sec { font-size: 7pt; margin: 6mm 0 2mm; }
+.side .it { font-size: 8.4pt; margin-bottom: 1mm; }
+.side .mono { font-size: 7.9pt; }
+
+.main { padding: 14mm 12mm 12mm 10mm; }
+.main .sec { font-size: 7pt; padding-top: 5mm; margin-bottom: 3mm; }
+
+.job .ln strong { font-size: 10.2pt; }
+.job .dt { font-size: 8pt; }
+.job .org { font-size: 8.4pt; }
+.job ul { padding-left: 4mm; }
+.job li { margin-bottom: 1mm; }
+.job .tags span { font-size: 7.6pt; padding: 0.4mm 2mm; }
+
+.win .wtitle { font-size: 9.4pt; }
+.win p { font-size: 8.6pt; }
+.cert { font-size: 8.6pt; margin-bottom: 1mm; }
+.sublab { font-size: 7pt; margin: 3mm 0 2mm; }
+
+/* Keep an entry whole rather than splitting a role across two pages. */
+.job,
+.win,
+.cert,
+.edu {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.sec {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.win a.wtitle {
+  border-bottom: 0;
+}

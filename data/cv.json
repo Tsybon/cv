@@ -39,7 +39,17 @@
           "Authored ~20 global correlation rules plus a large set of client-specific detections across ~40 log sources, feeding L1/L2 triage.",
           "Automate alert triage, scanner-result analysis and dynamic client dashboard generation with LLM and agentic workflows — task decomposition, tool use, verification and human oversight rather than one-shot prompting."
         ],
-        "tags": ["Python", "FastAPI", "React", "TypeScript", "Docker", "Splunk", "BBOT", "Nuclei", "NetBox"]
+        "tags": [
+          "Python",
+          "FastAPI",
+          "React",
+          "TypeScript",
+          "Docker",
+          "Splunk",
+          "BBOT",
+          "Nuclei",
+          "NetBox"
+        ]
       },
       {
         "role": "CTF Scenario Developer",
@@ -49,7 +59,9 @@
         "bullets": [
           "Design realistic defensive cybersecurity scenarios and hands-on challenges, translating attack and defense concepts into reproducible lab environments."
         ],
-        "variants": ["full"]
+        "variants": [
+          "full"
+        ]
       },
       {
         "role": "Scenario Engineer",
@@ -59,7 +71,9 @@
         "bullets": [
           "Develop and migrate CTF scenarios while preserving intended behaviour, dependencies and environment reliability."
         ],
-        "variants": ["full"]
+        "variants": [
+          "full"
+        ]
       }
     ],
     "selected": [
@@ -145,8 +159,16 @@
         "years": "2022"
       }
     ],
-    "languages": ["English — B2", "Ukrainian — native"],
-    "interests": ["Web development", "AI agents", "CTF"]
+    "languages": [
+      "English — B2",
+      "Ukrainian — native"
+    ],
+    "interests": [
+      "CTF",
+      "Vibe-coding",
+      "AI agents and applied AI",
+      "Building things — finding an interesting problem and shipping something for it"
+    ]
   },
   "ua": {
     "name": "Сергій Цибульник",
@@ -184,7 +206,17 @@
           "Написав ~20 глобальних correlation rules та великий набір клієнтських детекшенів по ~40 джерелах логів, які живлять тріаж L1/L2.",
           "Автоматизую тріаж алертів, аналіз результатів сканера та динамічну генерацію клієнтських дашбордів через LLM та агентні воркфлоу — декомпозиція задач, використання інструментів, верифікація й людський контроль замість one-shot промптів."
         ],
-        "tags": ["Python", "FastAPI", "React", "TypeScript", "Docker", "Splunk", "BBOT", "Nuclei", "NetBox"]
+        "tags": [
+          "Python",
+          "FastAPI",
+          "React",
+          "TypeScript",
+          "Docker",
+          "Splunk",
+          "BBOT",
+          "Nuclei",
+          "NetBox"
+        ]
       },
       {
         "role": "Розробник сценаріїв CTF",
@@ -194,7 +226,9 @@
         "bullets": [
           "Проєктую реалістичні сценарії захисної кібербезпеки та практичні завдання, перекладаючи концепції атаки й захисту у відтворювані лабораторні середовища."
         ],
-        "variants": ["full"]
+        "variants": [
+          "full"
+        ]
       },
       {
         "role": "Scenario Engineer",
@@ -204,7 +238,9 @@
         "bullets": [
           "Розробляю та переношу сценарії CTF, зберігаючи задуману поведінку, залежності й надійність середовища."
         ],
-        "variants": ["full"]
+        "variants": [
+          "full"
+        ]
       }
     ],
     "selected": [
@@ -290,7 +326,15 @@
         "years": "2022"
       }
     ],
-    "languages": ["Англійська — B2", "Українська — рідна"],
-    "interests": ["Веброзробка", "AI-агенти", "CTF"]
+    "languages": [
+      "Англійська — B2",
+      "Українська — рідна"
+    ],
+    "interests": [
+      "CTF",
+      "Вайбкодинг",
+      "AI-агенти та прикладний AI",
+      "Створювати — знайти цікаву задачу й зробити під неї щось робоче"
+    ]
   }
 }

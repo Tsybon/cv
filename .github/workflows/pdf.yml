@@ -1,0 +1,56 @@
+name: Build CV PDFs
+
+# paths-ignore on pdf/** plus [skip ci] on the commit below stops this workflow
+# from retriggering itself when it pushes the rebuilt PDFs.
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'pdf/**'
+      - 'docs/**'
+      - 'README.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cv-pdf
+  cancel-in-progress: true
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run tests
+        run: node --test tests/*.test.mjs
+
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1
+          npx playwright install --with-deps chromium
+
+      - name: Serve the site
+        run: |
+          python3 -m http.server 8123 &
+          for _ in $(seq 1 30); do
+            curl -sf http://127.0.0.1:8123/ >/dev/null && break
+            sleep 1
+          done
+
+      - name: Build PDFs
+        run: node scripts/build-pdf.mjs
+
+      - name: Commit PDFs
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add pdf/
+          git diff --staged --quiet || git commit -m "chore: rebuild CV PDFs [skip ci]"
+          git push
