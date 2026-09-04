@@ -1,0 +1,237 @@
+:root {
+  --sidebar-bg: #1a1a1d;
+  --sidebar-fg: #a8adb5;
+  --sidebar-head: #ffffff;
+  --sidebar-sec: #6b7078;
+  --accent: #c7ccd4;
+  --accent-print: #4b5058;
+  --paper: #ffffff;
+  --ink: #191d23;
+  --ink-muted: #4a515c;
+  --ink-faint: #98a1ad;
+  --rule: #eaecef;
+  --chip: #f3f5f7;
+  --page: #e9eaec;
+
+  --sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #191c20;
+    --ink: #e7e9ec;
+    --ink-muted: #b3b9c2;
+    --ink-faint: #7b828c;
+    --rule: #282c32;
+    --chip: #23262b;
+    --page: #0b0c0e;
+
+    /* The sidebar has to stay darker than the sheet, or the two columns read
+       as one flat block. Organisation names need to lighten too — the print
+       tone is unreadable on a dark sheet. */
+    --sidebar-bg: #0e0f11;
+    --sidebar-sec: #767c85;
+    --accent-print: #9aa2ad;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- page chrome ---------- */
+
+.chrome {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 14px 16px 10px;
+}
+
+.langs {
+  display: flex;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.langs button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink-faint);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.langs button.on { background: var(--ink); color: var(--paper); }
+.langs button:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
+
+.download {
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+/* ---------- sheet ---------- */
+
+.cv {
+  display: grid;
+  grid-template-columns: 236px 1fr;
+  max-width: 960px;
+  margin: 0 auto 40px;
+  background: var(--paper);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.12), 0 8px 28px rgb(0 0 0 / 0.08);
+}
+
+/* ---------- sidebar ---------- */
+
+.side {
+  background: var(--sidebar-bg);
+  color: var(--sidebar-fg);
+  padding: 30px 22px 34px;
+}
+
+.side .nm {
+  color: var(--sidebar-head);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.022em;
+  line-height: 1.13;
+  margin: 0 0 7px;
+}
+
+.side .rl {
+  color: var(--accent);
+  font-size: 11.5px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.side .sec {
+  font-size: 9.5px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--sidebar-sec);
+  font-weight: 600;
+  margin: 20px 0 8px;
+}
+
+.side .it {
+  font-size: 11.3px;
+  margin: 0 0 4px;
+  color: var(--sidebar-fg);
+  text-decoration: none;
+  display: block;
+  word-break: break-word;
+}
+
+.side a.it:hover { color: var(--sidebar-head); text-decoration: underline; }
+.side .mono { font-family: var(--mono); font-size: 10.7px; }
+
+.side .edu { margin-bottom: 9px; }
+.side .edu strong { color: #dfe3e8; font-weight: 600; display: block; }
+.side .edu span { display: block; }
+
+/* ---------- main column ---------- */
+
+.main { padding: 32px 32px 36px; }
+
+.main .sec {
+  font-size: 9.5px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 600;
+  margin: 0 0 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+
+.main .sec:first-child { padding-top: 0; border-top: 0; }
+
+.prof { color: var(--ink-muted); margin: 0 0 20px; }
+
+.job { margin-bottom: 18px; }
+
+.job .ln {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.job .ln strong { font-size: 13.5px; letter-spacing: -0.005em; }
+.job .dt { font-size: 10.8px; color: var(--ink-faint); white-space: nowrap; }
+
+.job .org {
+  font-size: 11.2px;
+  color: var(--accent-print);
+  font-weight: 500;
+  margin: 2px 0 7px;
+}
+
+.job ul { margin: 0; padding-left: 16px; color: var(--ink-muted); }
+.job li { margin-bottom: 4px; }
+
+.job .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+
+.job .tags span {
+  background: var(--chip);
+  color: var(--ink-muted);
+  padding: 2px 9px;
+  border-radius: 20px;
+  font-size: 10.5px;
+}
+
+.win { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 11px; }
+.win .mk { font-size: 14px; line-height: 1.25; flex: none; }
+.win .wtitle { font-size: 12.6px; font-weight: 600; color: var(--ink); }
+.win a.wtitle { text-decoration: none; border-bottom: 1px solid var(--ink-faint); }
+.win a.wtitle:hover { border-bottom-color: var(--ink); }
+.win p { margin: 2px 0 0; color: var(--ink-muted); font-size: 11.6px; }
+
+.cert { margin: 0 0 5px; color: var(--ink-muted); font-size: 11.8px; }
+
+.sublab {
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 600;
+  margin: 14px 0 8px;
+}
+
+.fallback { padding: 30px; text-align: center; color: var(--ink-muted); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 720px) {
+  .cv { grid-template-columns: 1fr; border-radius: 0; margin-bottom: 0; }
+  .chrome { max-width: none; }
+  .side { padding: 26px 20px 28px; }
+  .main { padding: 26px 20px 32px; }
+  .job .ln { flex-direction: column; gap: 2px; }
+}
