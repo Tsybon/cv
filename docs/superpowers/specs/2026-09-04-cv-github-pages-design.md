@@ -134,6 +134,9 @@ optional `variants` array; a node without it appears in both variants.
 - Page contacts: email `tsserg@protonmail.com`, LinkedIn
 - PDF-only contacts: phone `+38 (096) 038-01-55`, Telegram (handle pending)
 
+The GitHub profile is deliberately not linked: it has no public repositories,
+so the link would lead a recruiter to an empty page.
+
 Work format and relocation are deliberately not stated.
 
 ### Profile
@@ -236,8 +239,7 @@ Dragos Platform Certified User is excluded at the owner's request.
 
 ### Education
 
-- **State University of Telecommunications** — MSc, Computer Science, 1.5 years
-  following the bachelor's degree *(years pending confirmation)*
+- **State University of Telecommunications** — MSc, Computer Science, 2021–2023
 - **Igor Sikorsky Kyiv Polytechnic Institute** — BSc, Computer Science, 2017–2021
 - **Dubex, Denmark** — Cyber Academy, 3-month programme, 2022
 
@@ -327,8 +329,5 @@ sent the PDF URL directly.
 These do not block implementation; the affected fields ship with placeholders
 until answered.
 
-1. Telegram handle for the PDFs.
-2. Confirmation of the master's degree years (assumed 2021–2023).
-3. Whether to link the GitHub profile. It currently has zero public
-   repositories, so a recruiter following the link sees an empty page. This
-   repository will become the first public one.
+1. Telegram handle for the PDFs, or a decision to drop Telegram and keep only
+   the phone number.
