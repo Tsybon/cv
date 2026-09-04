@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "updated": "2026-09-04",
+    "defaultLang": "en"
+  },
+  "en": {
+    "name": "Serhii Tsybulnyk",
+    "role": "Security Engineer — EASM · Detection Engineering · Security Automation & AI",
+    "location": "Kyiv, Ukraine",
+    "contacts": {
+      "email": "dHNzZXJnQHByb3Rvbm1haWwuY29t",
+      "linkedin": "https://linkedin.com/in/serhii-tsybulnyk-b33667195",
+      "phone": "KzM4ICgwOTYpIDAzOC0wMS01NQ=="
+    },
+    "labels": {
+      "profile": "Profile",
+      "experience": "Experience",
+      "selected": "Selected work",
+      "certifications": "Certifications",
+      "training": "SANS training",
+      "contact": "Contact",
+      "education": "Education",
+      "languages": "Languages",
+      "interests": "Interests",
+      "download": "Download PDF"
+    },
+    "profile": "Security Engineer with 5+ years across SOC L1–L3, incident response and DFIR, detection engineering and External Attack Surface Management. Build production security tooling and automation, including a web platform built on top of a CLI-only attack-surface scanner, covering 2,000+ client organisations and 15,000+ tracked assets. Apply LLM/MCP and agentic workflows to security automation and engineering.",
+    "experience": [
+      {
+        "role": "Security Engineer, EASM & Automation",
+        "org": "Confidential (NDA)",
+        "orgHint": "national-level CSIRT",
+        "from": "2021-07",
+        "to": null,
+        "bullets": [
+          "Progressed from SOC L1/L2/L3 into security engineering — alert triage, incident response, DFIR, threat hunting, detection engineering and SIEM operations.",
+          "Sole developer of a web platform built on top of an open-source CLI attack-surface scanner: scan configuration and scheduling, run management, findings analysis, report generation and export — turning an operator-only tool into a product used across the team.",
+          "Operate external attack-surface monitoring across 2,000+ client organisations and 15,000+ tracked assets.",
+          "Authored ~20 global correlation rules plus a large set of client-specific detections across ~40 log sources, feeding L1/L2 triage.",
+          "Automate alert triage, scanner-result analysis and dynamic client dashboard generation with LLM and agentic workflows — task decomposition, tool use, verification and human oversight rather than one-shot prompting."
+        ],
+        "tags": ["Python", "FastAPI", "React", "TypeScript", "Docker", "Splunk", "BBOT", "Nuclei", "NetBox"]
+      },
+      {
+        "role": "CTF Scenario Developer",
+        "org": "Confidential (NDA)",
+        "from": "2024",
+        "to": null,
+        "bullets": [
+          "Design realistic defensive cybersecurity scenarios and hands-on challenges, translating attack and defense concepts into reproducible lab environments."
+        ],
+        "variants": ["full"]
+      },
+      {
+        "role": "Scenario Engineer",
+        "org": "Confidential (NDA)",
+        "from": "2026-01",
+        "to": null,
+        "bullets": [
+          "Develop and migrate CTF scenarios while preserving intended behaviour, dependencies and environment reliability."
+        ],
+        "variants": ["full"]
+      }
+    ],
+    "selected": [
+      {
+        "icon": "🏆",
+        "title": "Competitive CTF",
+        "detail": "Regular player on a high-performing team with multiple winning placements at international competitions; focus on blue and purple team work, DFIR and AI-assisted problem solving. Built tooling for attack/defense formats: service analysis, exploit analysis and generation, exploit validation and automated flag submission.",
+        "url": null
+      },
+      {
+        "icon": "📄",
+        "title": "Can Frontier Models Reverse-Engineer Malware? — ARIMLABS, 2026",
+        "detail": "Named co-author of a benchmark evaluating seven frontier models on static malware analysis: 12 samples, 121 statically-recoverable indicators, 252 evaluation runs.",
+        "url": "https://www.arimlabs.ai/writing/malware-reverse-engineering"
+      },
+      {
+        "icon": "🎓",
+        "title": "Guest SME and speaker",
+        "detail": "Hands-on AV/EDR/XDR session at SET University using CrowdStrike and ELK endpoint telemetry; conference talk on applying AI to security operations.",
+        "url": null
+      },
+      {
+        "icon": "⚙️",
+        "title": "Independent engineering",
+        "detail": "Personal web and security-automation projects, n8n workflows, AI-assisted development with LLM agents and MCP.",
+        "url": null
+      }
+    ],
+    "skills": {
+      "Security": [
+        "EASM · attack-surface discovery",
+        "Detection engineering · Sigma · YARA",
+        "Incident response · DFIR · threat hunting",
+        "Vulnerability management"
+      ],
+      "Platforms": [
+        "Splunk ES · ELK · QRadar · LogRhythm",
+        "CrowdStrike · Wazuh · Velociraptor",
+        "BBOT · Nuclei · NetBox · Nessus",
+        "MISP · n8n · AWS"
+      ],
+      "Engineering": [
+        "Python · FastAPI · REST",
+        "React · TypeScript",
+        "Docker · Linux · Bash · PowerShell"
+      ],
+      "AI security": [
+        "LLM workflows · MCP · agentic automation",
+        "Tool use · context and state management",
+        "Evaluation · verification · human-in-the-loop"
+      ]
+    },
+    "certifications": {
+      "certs": [
+        "GIAC Defending Advanced Threats (GDAT)",
+        "Splunk Certified Cybersecurity Defense Architect",
+        "Splunk Certified Cybersecurity Defense Analyst",
+        "Cisco CCNA",
+        "EC-Council Certified Incident Handler (ECIH)"
+      ],
+      "training": [
+        "SEC573 — AI-Powered Security Automation: Building Tools with Python, LLMs, and MCP",
+        "SEC598 — AI and Security Automation for Red, Blue, and Purple Teams",
+        "SEC555 — Detection Engineering and SIEM Analytics",
+        "FOR608 — Enterprise-Class Incident Response & Threat Hunting",
+        "FOR508 — Advanced Incident Response, Threat Hunting, and Digital Forensics"
+      ]
+    },
+    "education": [
+      {
+        "school": "State University of Telecommunications",
+        "degree": "MSc, Computer Science",
+        "years": "2021–2023"
+      },
+      {
+        "school": "Igor Sikorsky Kyiv Polytechnic Institute",
+        "degree": "BSc, Computer Science",
+        "years": "2017–2021"
+      },
+      {
+        "school": "Dubex, Denmark",
+        "degree": "Cyber Academy, 3-month programme",
+        "years": "2022"
+      }
+    ],
+    "languages": ["English — B2", "Ukrainian — native"],
+    "interests": ["Web development", "AI agents", "CTF"]
+  },
+  "ua": {
+    "name": "Сергій Цибульник",
+    "role": "Security Engineer — EASM · Detection Engineering · Security Automation & AI",
+    "location": "Київ, Україна",
+    "contacts": {
+      "email": "dHNzZXJnQHByb3Rvbm1haWwuY29t",
+      "linkedin": "https://linkedin.com/in/serhii-tsybulnyk-b33667195",
+      "phone": "KzM4ICgwOTYpIDAzOC0wMS01NQ=="
+    },
+    "labels": {
+      "profile": "Профіль",
+      "experience": "Досвід",
+      "selected": "Вибрані роботи",
+      "certifications": "Сертифікати",
+      "training": "Навчання SANS",
+      "contact": "Контакти",
+      "education": "Освіта",
+      "languages": "Мови",
+      "interests": "Інтереси",
+      "download": "Завантажити PDF"
+    },
+    "profile": "Security Engineer із 5+ роками досвіду в SOC рівнів L1–L3, реагуванні на інциденти та DFIR, detection engineering і External Attack Surface Management. Розробляю бойові інструменти безпеки та автоматизацію — зокрема вебплатформу над консольним сканером поверхні атаки, що охоплює 2 000+ клієнтських організацій і 15 000+ активів. Застосовую LLM/MCP та агентні воркфлоу в автоматизації й інженерії безпеки.",
+    "experience": [
+      {
+        "role": "Security Engineer, EASM та автоматизація",
+        "org": "Confidential (NDA)",
+        "orgHint": "національний CSIRT",
+        "from": "2021-07",
+        "to": null,
+        "bullets": [
+          "Пройшов шлях від SOC L1/L2/L3 до інженерії безпеки — тріаж алертів, реагування на інциденти, DFIR, threat hunting, detection engineering та експлуатація SIEM.",
+          "Єдиний розробник вебплатформи над open-source консольним сканером поверхні атаки: конфігурація й планування сканів, керування ранами, аналіз знахідок, генерація та експорт репортів — інструмент для оператора перетворено на продукт для всієї команди.",
+          "Забезпечую моніторинг зовнішньої поверхні атаки для 2 000+ клієнтських організацій і 15 000+ активів.",
+          "Написав ~20 глобальних correlation rules та великий набір клієнтських детекшенів по ~40 джерелах логів, які живлять тріаж L1/L2.",
+          "Автоматизую тріаж алертів, аналіз результатів сканера та динамічну генерацію клієнтських дашбордів через LLM та агентні воркфлоу — декомпозиція задач, використання інструментів, верифікація й людський контроль замість one-shot промптів."
+        ],
+        "tags": ["Python", "FastAPI", "React", "TypeScript", "Docker", "Splunk", "BBOT", "Nuclei", "NetBox"]
+      },
+      {
+        "role": "Розробник сценаріїв CTF",
+        "org": "Confidential (NDA)",
+        "from": "2024",
+        "to": null,
+        "bullets": [
+          "Проєктую реалістичні сценарії захисної кібербезпеки та практичні завдання, перекладаючи концепції атаки й захисту у відтворювані лабораторні середовища."
+        ],
+        "variants": ["full"]
+      },
+      {
+        "role": "Scenario Engineer",
+        "org": "Confidential (NDA)",
+        "from": "2026-01",
+        "to": null,
+        "bullets": [
+          "Розробляю та переношу сценарії CTF, зберігаючи задуману поведінку, залежності й надійність середовища."
+        ],
+        "variants": ["full"]
+      }
+    ],
+    "selected": [
+      {
+        "icon": "🏆",
+        "title": "Змагання CTF",
+        "detail": "Постійний гравець сильної команди з кількома призовими місцями на міжнародних змаганнях; фокус на blue і purple team, DFIR та розв'язанні задач із допомогою AI. Побудував інструментарій для формату attack/defense: аналіз сервісів, аналіз і генерація експлойтів, валідація експлойтів та автоматичний сабміт прапорів.",
+        "url": null
+      },
+      {
+        "icon": "📄",
+        "title": "Can Frontier Models Reverse-Engineer Malware? — ARIMLABS, 2026",
+        "detail": "Співавтор дослідження, що оцінює сім frontier-моделей на статичному аналізі шкідливого ПЗ: 12 семплів, 121 статично відновлюваний індикатор, 252 оцінювальні прогони.",
+        "url": "https://www.arimlabs.ai/writing/malware-reverse-engineering"
+      },
+      {
+        "icon": "🎓",
+        "title": "Запрошений експерт і спікер",
+        "detail": "Практичне заняття з AV/EDR/XDR у SET University на базі CrowdStrike та ELK-телеметрії з ендпоінтів; доповідь на конференції про застосування AI в операціях безпеки.",
+        "url": null
+      },
+      {
+        "icon": "⚙️",
+        "title": "Власні проєкти",
+        "detail": "Особисті вебпроєкти та автоматизація безпеки, воркфлоу на n8n, розробка з LLM-агентами й MCP.",
+        "url": null
+      }
+    ],
+    "skills": {
+      "Безпека": [
+        "EASM · виявлення поверхні атаки",
+        "Detection engineering · Sigma · YARA",
+        "Реагування на інциденти · DFIR · threat hunting",
+        "Управління вразливостями"
+      ],
+      "Платформи": [
+        "Splunk ES · ELK · QRadar · LogRhythm",
+        "CrowdStrike · Wazuh · Velociraptor",
+        "BBOT · Nuclei · NetBox · Nessus",
+        "MISP · n8n · AWS"
+      ],
+      "Інженерія": [
+        "Python · FastAPI · REST",
+        "React · TypeScript",
+        "Docker · Linux · Bash · PowerShell"
+      ],
+      "AI-безпека": [
+        "LLM-воркфлоу · MCP · агентна автоматизація",
+        "Використання інструментів · керування контекстом",
+        "Оцінювання · верифікація · human-in-the-loop"
+      ]
+    },
+    "certifications": {
+      "certs": [
+        "GIAC Defending Advanced Threats (GDAT)",
+        "Splunk Certified Cybersecurity Defense Architect",
+        "Splunk Certified Cybersecurity Defense Analyst",
+        "Cisco CCNA",
+        "EC-Council Certified Incident Handler (ECIH)"
+      ],
+      "training": [
+        "SEC573 — AI-Powered Security Automation: Building Tools with Python, LLMs, and MCP",
+        "SEC598 — AI and Security Automation for Red, Blue, and Purple Teams",
+        "SEC555 — Detection Engineering and SIEM Analytics",
+        "FOR608 — Enterprise-Class Incident Response & Threat Hunting",
+        "FOR508 — Advanced Incident Response, Threat Hunting, and Digital Forensics"
+      ]
+    },
+    "education": [
+      {
+        "school": "Державний університет телекомунікацій",
+        "degree": "Магістр, комп'ютерні науки",
+        "years": "2021–2023"
+      },
+      {
+        "school": "КПІ ім. Ігоря Сікорського",
+        "degree": "Бакалавр, комп'ютерні науки",
+        "years": "2017–2021"
+      },
+      {
+        "school": "Dubex, Данія",
+        "degree": "Cyber Academy, тримісячна програма",
+        "years": "2022"
+      }
+    ],
+    "languages": ["Англійська — B2", "Українська — рідна"],
+    "interests": ["Веброзробка", "AI-агенти", "CTF"]
+  }
+}
