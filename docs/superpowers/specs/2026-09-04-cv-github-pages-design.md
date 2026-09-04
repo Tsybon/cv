@@ -99,7 +99,8 @@ optional `variants` array; a node without it appears in both variants.
     "experience": [ { "role": "…", "org": "Confidential (NDA)", "orgHint": "…",
                       "from": "2021-07", "to": null, "bullets": ["…"],
                       "tags": ["…"], "variants": ["redacted","full"] } ],
-    "selected":  [ { "icon": "…", "title": "…", "detail": "…", "variants": [...] } ],
+    "selected":  [ { "icon": "…", "title": "…", "detail": "…",
+                     "url": null, "variants": [...] } ],
     "skills":    { "Security": ["…"], "Platforms": ["…"],
                    "Engineering": ["…"], "AI Security": ["…"] },
     "certifications": { "certs": ["…"], "training": ["…"] },
@@ -183,9 +184,17 @@ Tags: Python, FastAPI, React, TypeScript, Docker, Splunk, BBOT, Nuclei, NetBox
   DFIR and AI-assisted problem solving. Built tooling for attack/defense
   formats: service analysis, exploit analysis and generation, exploit
   validation and automated flag submission. *(both variants)*
-- **AI malware reverse-engineering benchmark** — contributed to benchmark design
-  and evaluation for autonomous agents performing static malware analysis.
-  No client, project or vendor named. *(both variants)*
+- **Publication — "Can Frontier Models Reverse-Engineer Malware?"** — ARIMLABS,
+  July 2026, named co-author. Benchmark evaluating seven frontier models on
+  static malware analysis: 12 samples, 121 statically-recoverable indicators,
+  252 evaluation runs. Links to
+  `https://www.arimlabs.ai/writing/malware-reverse-engineering`.
+  *(both variants)*
+
+  The publication and the co-author credit are public, so ARIMLABS and the
+  research title are named. Internal detail of the owner's specific
+  contribution — which samples and exploits were prepared, and how the runs
+  were orchestrated — stays off the CV.
 - **Guest SME and speaker** — hands-on AV/EDR/XDR session at SET University
   using CrowdStrike and ELK endpoint telemetry; conference talk on applying AI
   to security operations. *(both variants)*
@@ -320,7 +329,6 @@ until answered.
 
 1. Telegram handle for the PDFs.
 2. Confirmation of the master's degree years (assumed 2021–2023).
-3. LinkedIn article link the owner will provide, for a future publications line.
-4. Whether to link the GitHub profile. It currently has zero public
+3. Whether to link the GitHub profile. It currently has zero public
    repositories, so a recruiter following the link sees an empty page. This
    repository will become the first public one.
