@@ -29,7 +29,7 @@ the repository and in the full variant. This is accepted: the two variants exist
 to tailor the CV to a vacancy, not to keep secrets. Nothing genuinely
 confidential goes into the repository at all.
 
-**Contact data.** Phone and Telegram appear only in the generated PDFs, not on
+**Contact data.** The phone number appears only in the generated PDFs, not on
 the page. The PDFs are served from a public URL, so this reduces scraping by
 crawlers that parse HTML but does not make the phone number private.
 
@@ -92,8 +92,7 @@ optional `variants` array; a node without it appears in both variants.
     "contacts": {
       "email": "<base64>",
       "linkedin": "https://linkedin.com/in/serhii-tsybulnyk-b33667195",
-      "phone": "<base64, PDF only>",
-      "telegram": "<base64, PDF only>"
+      "phone": "<base64, PDF only>"
     },
     "profile": "…",
     "experience": [ { "role": "…", "org": "Confidential (NDA)", "orgHint": "…",
@@ -116,8 +115,8 @@ optional `variants` array; a node without it appears in both variants.
 
 - **Dates** are ISO `YYYY-MM`; durations are computed at render time so the CV
   never goes stale.
-- **Email, phone and Telegram** are stored base64-encoded and decoded in JS.
-  Email is rendered on the page; phone and Telegram are injected only into the
+- **Email and phone** are stored base64-encoded and decoded in JS.
+  Email is rendered on the page; the phone number is injected only into the
   PDF build. They are not obfuscated for secrecy — only to defeat naive
   address-harvesting crawlers.
 - **`variants`** drives both the page render and which PDFs are generated.
@@ -132,7 +131,10 @@ optional `variants` array; a node without it appears in both variants.
 - Role line: Security Engineer — EASM · Detection Engineering · Security Automation & AI
 - Location: Kyiv, Ukraine
 - Page contacts: email `tsserg@protonmail.com`, LinkedIn
-- PDF-only contacts: phone `+38 (096) 038-01-55`, Telegram (handle pending)
+- PDF-only contact: phone `+38 (096) 038-01-55`
+
+Telegram is not published anywhere. The old CV carried it; it is dropped to
+keep one fewer personal channel in a world-readable file.
 
 The GitHub profile is deliberately not linked: it has no public repositories,
 so the link would lead a recruiter to an empty page.
@@ -292,7 +294,7 @@ GitHub Actions workflow on push to `main`:
 2. Serve the repository over a local static server.
 3. For each of the four combinations (variant × language), open the page with
    the language preset via a query parameter, wait for render, inject
-   PDF-only contacts, and print to A4 with `print.css` applied.
+   the PDF-only phone number, and print to A4 with `print.css` applied.
 4. Commit the four PDFs back to `pdf/` if they changed.
 
 The download button links to the matching prebuilt file, so a recruiter can be
@@ -319,15 +321,11 @@ sent the PDF URL directly.
 - The redacted variant contains no occurrence of "CTF Scenario", "Scenario
   Engineer" or scenario-development wording.
 - No file in the repository contains "CERT-UA" or the State Service name.
-- All four PDFs generate and open, contain phone and Telegram, and stay within
+- All four PDFs generate and open, contain the phone number, and stay within
   the page budget.
 - Page renders correctly with JavaScript-driven language switching and after a
   hard reload with a stored language preference.
 
 ## Open items
 
-These do not block implementation; the affected fields ship with placeholders
-until answered.
-
-1. Telegram handle for the PDFs, or a decision to drop Telegram and keep only
-   the phone number.
+None. Every content and design decision is settled; implementation can start.
