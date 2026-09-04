@@ -15,26 +15,13 @@
 
   --sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #191c20;
-    --ink: #e7e9ec;
-    --ink-muted: #b3b9c2;
-    --ink-faint: #7b828c;
-    --rule: #282c32;
-    --chip: #23262b;
-    --page: #0b0c0e;
-
-    /* The sidebar has to stay darker than the sheet, or the two columns read
-       as one flat block. Organisation names need to lighten too — the print
-       tone is unreadable on a dark sheet. */
-    --sidebar-bg: #0e0f11;
-    --sidebar-sec: #767c85;
-    --accent-print: #9aa2ad;
-  }
-}
+/* The page deliberately does not follow the system theme. A CV is a document,
+   and the downloaded PDF is always light — a dark sheet on screen and a white
+   one in the file look like two different documents. */
 
 * { box-sizing: border-box; }
 
